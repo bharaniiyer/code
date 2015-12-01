@@ -30,5 +30,5 @@ function showpost_block_view()
 */
 function show_post()
 {
-    return 'Welcome to custom block';
+    return 'Welcome to show post block';
 }
