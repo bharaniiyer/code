@@ -1,4 +1,4 @@
-name = ShowPost
-description = Showpost block module
+name = Showpost
+description = hardcoded content will be display
 package = showpost
 core = 7.x
