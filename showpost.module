@@ -1,0 +1,32 @@
+<?php
+/**
+ * Description: Information about the block, this will avaiable in the block list
+ * Implements hook_block_info().
+ */
+function showpost_block_info()
+{
+    $block['showpost'] = array(
+        'info' => t('Show post')       
+    );
+    return $block;
+}
+ 
+ /**
+ * Description: Block will render static content
+ * Implements hook_block_view().
+ */
+function showpost_block_view($block_key)
+{
+    $block = array();
+    $form_heading     = "<h2 class='form_heading'>Show Post</h2>";
+    //This is the title of the block.
+    $block['subject'] = t('<h2>'.$form_heading.'</h2>');
+    //Define the block content.
+    $block['content'] = today_showpost();
+    return $block;
+}
+
+function today_showpost()
+{
+    return 'Welcome to custom block';
+}

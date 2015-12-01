@@ -1,0 +1,4 @@
+name = ShowPost
+description = Showpost block module
+package = showpost
+core = 7.x
